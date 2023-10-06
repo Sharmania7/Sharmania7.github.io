@@ -15,7 +15,8 @@ body {
 
 
 /* Style the navigation menu */
-nav ul {
+
+.nav ul {
   list-style-type: none;
   background-color: #333;
   text-align: center;
@@ -32,7 +33,6 @@ nav ul li a {
   color: #fff;
   font-weight: bold;
 }
-
 /* Style the main content section */
 main {
   max-width: 800px;
