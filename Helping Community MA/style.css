@@ -1,1 +1,206 @@
 /*Jai*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-gap: 12px;
+}
+
+.grid-item {
+    background-color: turquoise;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.navbar {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.title {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    text-align: center;
+}
+
+.mission-statement {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.cta-button {
+    grid-column: 3 / span 1;
+    grid-row: 3;
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slideshow {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    /* Placeholder styles for the slideshow */
+}
+
+.image1 {
+    grid-column: 3 / span 1;
+    grid-row: 4;
+    /* Placeholder styles for the image */
+}
+
+.live-stats {
+    grid-column: 1 / span 3;
+    grid-row: 5;
+    /* Placeholder styles for the live impact statistics */
+}
+
+.navbar a {
+    float: left; /* Float the links to the left */
+    display: block; /* Display links as block elements */
+    color: #fff; /* Link text color */
+    text-align: center;
+    padding: 14px 16px; /* Link padding */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+/* Change the link color on hover */
+.navbar a:hover {
+    background-color: #4CAF50; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+
+.navbar a {
+    float: left; /* Float the links to the left */
+    display: block; /* Display links as block elements */
+    color: white; /* Link text color */
+    text-align: center;
+    padding: 14px 16px; /* Link padding */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+/* Change the link color on hover */
+.navbar a:hover {
+    background-color: #4CAF50; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+
+/* Style the navbar dropdown */
+.dropdown {
+    float: left; /* Float the dropdown to the left */
+    overflow: hidden;
+}
+
+/* Style the dropdown button */
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Change the dropdown button color on hover */
+.dropdown:hover .dropbtn {
+    background-color: #4CAF50; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none; /* Hide the dropdown content by default */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    float: none;
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Change the dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd; /* Hover background color */
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+.dropdown2 {
+    float: left; /* Float the dropdown to the left */
+    overflow: hidden;
+}
+
+/* Style the dropdown button */
+.dropdown2 .dropbtn2 {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Change the dropdown button color on hover */
+.dropdown2:hover .dropbtn2 {
+    background-color: #4CAF50; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+
+/* Style the dropdown content */
+.dropdown-content2 {
+    display: none; /* Hide the dropdown content by default */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content2 a {
+    float: none;
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Change the dropdown links on hover */
+.dropdown-content2 a:hover {
+    background-color: #ddd; /* Hover background color */
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
