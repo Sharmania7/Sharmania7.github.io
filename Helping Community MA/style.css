@@ -1,4 +1,20 @@
 /*Jai*/
+h2{
+    font-family: "capitolina", serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+    h3{
+    font-family: "capitolina", serif;
+    font-weight: 550;
+    font-style: normal;
+    }
+    p{
+    font-family: "capitolina", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
 .grid-container {
     display: grid;
     grid-template-columns: 40% 30% 30%;
@@ -6,68 +22,30 @@
 }
 
 .grid-item {
-    background-color: turquoise;
     text-align: center;
     font-size: 20px;
     padding: 20px;
 }
 
+body{
+    background-color: #997646;
+}
+
 .navbar {
     grid-column: 1 / span 3;
     grid-row: 1;
-    background-color: #333;
+    background-color: green;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
 
-.title {
-    grid-column: 1 / span 3;
-    grid-row: 2;
-    text-align: center;
-}
-
-.mission-statement {
-    grid-column: 1 / span 2;
-    grid-row: 3;
-}
-
-.cta-button {
-    grid-column: 3 / span 1;
-    grid-row: 3;
-    text-align: center;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.slideshow {
-    grid-column: 1 / span 2;
-    grid-row: 4;
-    /* Placeholder styles for the slideshow */
-}
-
-.image1 {
-    grid-column: 3 / span 1;
-    grid-row: 4;
-    /* Placeholder styles for the image */
-}
-
-.live-stats {
-    grid-column: 1 / span 3;
-    grid-row: 5;
-    /* Placeholder styles for the live impact statistics */
-}
 
 .navbar a {
-    float: left;
     /* Float the links to the left */
     display: block;
     /* Display links as block elements */
-    color: #fff;
+    color: #C19ACB;
     /* Link text color */
     text-align: center;
     padding: 14px 16px;
@@ -76,26 +54,8 @@
     /* Remove underlines from links */
 }
 
-/* Change the link color on hover */
-.navbar a:hover {
-    background-color: #4CAF50;
-    /* Hover background color */
-    color: #fff;
-    /* Hover text color */
-}
-
-.navbar a {
-    float: left;
-    /* Float the links to the left */
-    display: block;
-    /* Display links as block elements */
-    color: white;
-    /* Link text color */
-    text-align: center;
-    padding: 14px 16px;
-    /* Link padding */
-    text-decoration: none;
-    /* Remove underlines from links */
+.navbar li{
+    display: inline-block;
 }
 
 /* Change the link color on hover */
@@ -108,9 +68,8 @@
 
 /* Style the navbar dropdown */
 .dropdown {
-    float: left;
-    /* Float the dropdown to the left */
-    overflow: hidden;
+    position: relative;
+    display: inline-block;
 }
 
 /* Style the dropdown button */
@@ -118,7 +77,7 @@
     font-size: 20px;
     border: none;
     outline: none;
-    color: #fff;
+    color: #C19ACB;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -142,6 +101,8 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    
+
 }
 
 /* Style the dropdown links */
@@ -152,6 +113,7 @@
     text-decoration: none;
     display: block;
     text-align: left;
+    
 }
 
 /* Change the dropdown links on hover */
@@ -166,15 +128,9 @@
 }
 
 
-
-
-
-
-
 .dropdown2 {
-    float: left;
-    /* Float the dropdown to the left */
-    overflow: hidden;
+    position: relative;
+    display: inline-block;
 }
 
 /* Style the dropdown button */
@@ -182,7 +138,7 @@
     font-size: 20px;
     border: none;
     outline: none;
-    color: #fff;
+    color: #C19ACB;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -206,6 +162,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    
 }
 
 /* Style the dropdown links */
@@ -234,7 +191,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: green;
     color: white;
     text-align: center;
   }
