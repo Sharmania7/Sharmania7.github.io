@@ -8,10 +8,42 @@
     <title>contactus</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        .title1 {
+            background-color: lightgray;
+            grid-column: 1, span 2;
+            grid-row: 2;
+        }
+
         .background-image {
-            grid-column: 1, span 3;
+            background-image: url(images/forest.jpg);
+        }
+
+        /* 
+        
+        What is the color theme 
+        also add fonts
+        can we use a different column space allocating for each page
+        add image icons for location, email, phone number 
+        why wont the background image extend columns
+        I want to use the video class for both web pages 
+    
+        */
+        .location {
             grid-row: 3;
-            background-color: bisque;
+            grid-column: 1;
+            background-color: lightgray;
+        }
+
+        .email {
+            grid-row: 3;
+            grid-column: 2;
+            background-color: lightgray;
+        }
+
+        .phonenumber {
+            grid-row: 3;
+            grid-column: 3;
+            background-color: lightgray;
         }
     </style>
 
@@ -49,7 +81,6 @@
         </div>
         <div>
             <div class="grid-item background-image">
-                <img src="images/forest.jpg" style="width: 100%;">
                 <h1> Reach out and make a change!</h1>
                 <h2> Email, Call, or Visit!</h2>
             </div>
@@ -59,6 +90,23 @@
         <div class="footer">
             Arnav
         </div>
+        <div class="footer">
+            Arnav
+        </div>
+        <div class="location">
+            <h2>Office Location:</h2>
+            <h3>Eastside Preparatory School</h3>
+            <p>10613 NE 38th Place, Kirkland, WA 98033</p>
+        </div>
+        <div class="email">
+            <h2>Email:</h2>
+            <h3>info@eastsideprep.org</h3>
+        </div>
+        <div class="phonenumber">
+            <h2>Phone number:</h2>
+            <h3>(425) 822-5668</h3>
+        </div>
+</body>
 </body>
 
 </html>

@@ -10,13 +10,42 @@
     <style>
         .title1 {
             background-color: lightgray;
-            grid-column: 1;
+            grid-column: 1, span 2;
             grid-row: 2;
+        }
+
+        .background-image {
+            background-image: url(images/forest.jpg);
+        }
+
+        .one {
+            grid-row: 3;
+            grid-column: 1;
+            background-color: lightgray;
+        }
+
+        .two {
+            grid-row: 3;
+            grid-column: 2;
+            background-color: lightgray;
+        }
+
+        .three {
+            grid-row: 3;
+            grid-column: 3;
+            background-color: lightgray;
+        }
+
+        .video {
+            grid-row: 4;
+            grid-column: 1, span 2;
+            background-color: lightgray;
         }
     </style>
 </head>
 
 <body>
+
     <div class="grid-container">
 
         <div class="grid-item navbar">Navbar
@@ -46,12 +75,24 @@
                 </div>
             </div>
         </div>
+        <div class="title1 background-image">
+            <h1>How can YOU make a change?</h1>
+            <h2>Read more to find out! </h2>
+        </div>
         <div class="footer">
             Arnav
         </div>
-        <div class="title1">
-            <h1>How can YOU make a change?</h1>
-            <h2>Read more to find out! </h2>
+        <div class="one">
+            <h2>1.</h2>
+        </div>
+        <div class="two">
+            <h2>2.</h2>
+        </div>
+        <div class="three">
+            <h2>3.</h2>
+        </div>
+        <div>
+            youtube vid
         </div>
 </body>
 
