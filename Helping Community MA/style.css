@@ -1,5 +1,10 @@
 /*Jai*/
-h2{
+    h1{
+    font-family: "capitolina", serif;
+    font-weight: 900;
+    font-style: bold;
+    }
+    h2{
     font-family: "capitolina", serif;
     font-weight: 700;
     font-style: normal;
@@ -38,6 +43,9 @@ body{
     color: white;
     text-align: center;
     padding: 10px 0;
+    font-family: "capitolina", serif;
+    font-weight: 500;
+    font-style: bold;
 }
 
 
@@ -83,6 +91,10 @@ body{
     font-family: inherit;
     margin-right: 80px;
     margin-left: 80px;
+    font-family: "capitolina", serif;
+    font-weight: 500;
+    font-style: bold;
+
 }
 
 /* Change the dropdown button color on hover */
@@ -143,7 +155,9 @@ body{
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    
+    font-family: "capitolina", serif;
+    font-weight: 500;
+    font-style: bold;    
 }
 
 /* Change the dropdown button color on hover */
