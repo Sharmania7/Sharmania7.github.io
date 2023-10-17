@@ -16,57 +16,59 @@
             th,
             td {
                 border: 1px solid #dddddd;
+                width: 172px;
             }
 
-            tr:nth-child(odd) {
-                background-color: rgb(20, 55, 20);
-                color: rgb(255, 125, 55);
+            tr:nth-child(even) {
+                background-color: rgb(35, 90, 35);
+                color: rgb(210, 115, 75);
             }
 
             .title {
                 text-align: center;
                 grid-column: 1 / span 3;
                 grid-row: 2;
-                background-color: rgb(20, 55, 20);
-                color: rgb(195, 95, 10);
+                background-color: rgb(45, 125, 45);
+                color: rgb(150, 65, 5);
             }
 
             .mission-statement {
                 text-align: center;
                 grid-column: 1 / span 3;
                 grid-row: 3;
-                background-color: rgb(25, 100, 25);
+                background-color: rgb(85, 200, 85);
+                color: rgb(110, 75, 25);
             }
 
-            .text {
+            .text-main {
                 text-align: left;
                 grid-column: 1 / span 3;
                 grid-row: 4 / span 5;
-                background-color: rgb(85, 200, 85);
+                background-color: rgb(25, 100, 25);
+            }
+
+            .text-sub {
+                text-align: left;
+                grid-column: 1 / span 3;
+                grid-row: 10 / span 2;
+                background-color: rgb(15, 70, 15);
             }
 
             .image1 {
-                text-align: center;
-                grid-column: 3;
-                grid-row: 5;
-                background-color: rgb(85, 200, 85);
-            }
-
-            .image2 {
-                text-align: center;
-                grid-column: 1;
-                grid-row: 7;
-                background-color: rgb(85, 200, 85);
+                width: 30%;
+                float: right;
+                padding: 10px;
             }
 
             .table {
-                grid-column: 2;
+                align-content: center;
+                grid-column: 1 /span 3;
                 grid-row: 9;
             }
 
             p {
                 text-indent: 100px;
-                color: brown;
+                color: rgb(230, 150, 70);
             }
         </style>
     </head>
@@ -100,57 +102,129 @@
             <div class="grid-item title">
                 <h1>Dirty Air in Washington</h1>
             </div>
-            <div class="grid-item mission-statement">Mission Statement</div>
-            <div class="grid-item text">
-                <p>The air in Washington has</p>
+            <div class="grid-item mission-statement">
+                <h3>The air quality in Washington is taking a nosedive. We need to clean it back up.</h3>
             </div>
-            <div class="grid-item image1">Image 1</div>
-            <div class="grid-item image2">Image 2</div>
+            <div class="grid-item text-main">
+                <p>
+                    When you think about air, you most likely imagine either a picturesque pocket of nature with a
+                    beautiful view and a light breeze, or maybe bottled air from The Lorax. But the air in Washington is
+                    being polluted at a rapid rate. The main way pollution is measured is using a measurement called
+                    AQI, or Air Quality Index. AQI can be based on a few different things, including ground-level ozone,
+                    carbon monoxide, sulfur dioxide, nitrogen dioxide, and particulate matter, which is what is focused
+                    on here.<img class="image1" src="images/pm.jpg" alt="PM size"> Particulate matter, or PM, has two
+                    major types, PM2.5 and PM10. These are named based on the size of these particals in micrometers, or
+                    microns. For reference, a micrometer is one thousandth of a millimeter. As you can see on the right,
+                    hair and sand, two of the smallest things that can be seen with the naked eye, are still five to ten
+                    times thicker than PM10, and 20 to 40 times thicker than PM2.5.
+                </p>
+                <img class="image2" src="" alt="">
+            </div>
             <div class="grid-item table">
-                <table style="background-color: rgb(35, 90, 35); color: rgb(210, 115, 75);">
-                    <tr style="color: rgb(195, 90, 0);">
+                <table style="background-color: rgb(20, 65, 20); color: rgb(255, 125, 55);">
+                    <tr style="background-color: rgb(20, 50, 20); color: rgb(195, 90, 0); text-align: center;">
                         <th>Area</th>
-                        <th>AQI</th>
-                        <th>Pollution</th>
-                        <th>PM2.5</th>
+                        <th>AQI Avg</th>
+                        <th>AQI Risk</th>
+                        <th>PM2.5 2018</th>
+                        <th>PM2.5 2023</th>
+                        <th>PM2.5 Avg</th>
                         <th>Particles</th>
                     </tr>
                     <tr>
                         <td>Seattle</td>
-                        <td>25-50</td>
-                        <td>Good</td>
+                        <td>23.7</td>
+                        <td>Little Risk</td>
+                        <td>8.3</td>
+                        <td>9.3</td>
                         <td>7.93</td>
                         <td>Moderate</td>
                     </tr>
                     <tr>
+                        <td>Spokane</td>
+                        <td>55.1</td>
+                        <td>Some Risk</td>
+                        <td>10.6</td>
+                        <td>12.1</td>
+                        <td>10.73</td>
+                        <td>Unhealthy</td>
+                    </tr>
+                    <tr>
+                        <td>Tacoma</td>
+                        <td>29.4</td>
+                        <td>Little Risk</td>
+                        <td>7.9</td>
+                        <td>9.7</td>
+                        <td>8.03</td>
+                        <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <td>Vancouver</td>
+                        <td>40.6</td>
+                        <td>Little Risk</td>
+                        <td>8.2</td>
+                        <td>10.4</td>
+                        <td>9.83</td>
+                        <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <td>Bellevue</td>
+                        <td>30.2</td>
+                        <td>Little Risk</td>
+                        <td>5.5</td>
+                        <td>8.7</td>
+                        <td>6.46</td>
+                        <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <td>Kent</td>
                         <td></td>
+                        <td> Risk</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <td>Everett</td>
+                        <td></td>
+                        <td> Risk</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
+                        <td>Spokane Valley</td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
+                        <td> Risk</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
+                        <td>Renton</td>
                         <td></td>
+                        <td> Risk</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Federal Way</td>
+                        <td></td>
+                        <td> Risk</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                 </table>
+            </div>
+            <div class="grid-item text-sub">
+                <p>As you can see,</p>
             </div>
             <div class="footer">Page made by Guthrie Barrager</div>
         </div>
