@@ -70,21 +70,39 @@
             cursor: pointer;
         }
 
+        .table-button {
+            grid-column: 3/ span 1;
+            grid-row: 4;
+            background-color: rgb(88, 89, 52);
+        }
+
         .slideshow {
             grid-column: 1 / span 2;
-            grid-row: 5;
+            grid-row: 4;
             /* Placeholder styles for the slideshow */
         }
 
         .image1 {
             grid-column: 4 / span 3;
-            grid-row: 5;
+            grid-row: 6;
             /* Placeholder styles for the image */
         }
 
         .live-stats {
             grid-column: 1 / span 3;
             grid-row: 5;
+        }
+
+        p {
+            color: white;
+        }
+
+        body {
+            background-color: rgb(144, 156, 165);
+        }
+
+        img {
+            border-radius: 10px;
         }
 
         /* Placeholder styles for the live impact statistics */
@@ -124,8 +142,9 @@
             </div>
         </div>
 
-        <div class="grid-item title" style="font-size: 30px; font-family: 'Times New Roman', Times, serif;">General
-            Environmental Problems in Washington</div>
+        <div class="grid-item title" style="font-size: 30px; font-family: 'Times New Roman', Times, serif;">
+            General Environmental Problems in Washington
+        </div>
 
         <div class="grid-item mission-statement">Statement
             <p>
@@ -134,22 +153,41 @@
                 granted.
                 There
                 are many issues still present today, such as
-                habitat loss, Air pollution, Climate change, and Puget Sound Issues.
+                Habitat loss, Air pollution, Climate change, and Puget Sound Issues.
             </p>
-            <div class="image1"></div>
+            <div class="image1">
+                <img src="images/background-image.jfif" alt="">
+            </div>
         </div>
 
-        <div class="grid-item cta-button">Side Nav
+        <div class="grid-item cta-button" style="color: black;">Side Nav
             Sources:
-            <img src="" alt="">
+            <p>
+                <a href="https://ecology.wa.gov/Water-Shorelines/Puget-Sound/Issues-problems" target="_blank"
+                    style="color: white;">Site
+                    which gives overview of Environmental Problems</a>
+
+                <a href="https://snohomishcountywa.gov/3856/Why-Does-Puget-Sound-Need-Our-Help"
+                    style="color: white;">Views on Environmental
+                    Problems from
+                    Snohomish County
+                </a>
+            </p>
         </div>
 
         <div class="grid-item slideshow">Background
+            <p>Washington is a beautiful state in the United States however environmental problems are extremely present
+                in this day and age. The puget sound is a region of Washington which is heavily effected by animal and
+                human pollution.
+                For example, puget sound contains a high level of bacteria in the water, this is a risk to human safety
+                as well as animal
+                safety.
+            </p>
 
             <div class="slideshow-container">
 
                 <div class="footer">
-                    <p>Wyatt Berry</p>
+                    <p style="color: white;">Wyatt Berry</p>
                 </div>
             </div>
         </div>
@@ -157,29 +195,31 @@
         <img src="" alt="">
 
 
-        <div class="image1">Image here
-            <img src="images/wildfires.jpg" alt="">
+
+        <div class="table-button">
+            <table style="color: white;">
+                <tr>
+                    <th>Issues</th>
+                    <th>Effect</th>
+                    <th>Solutions</th>
+                </tr>
+                <tr>
+                    <td>Climate Change</td>
+                    <td>Increasing temperature of the Earth</td>
+                    <td>Limit fossil fuel use</td>
+                </tr>
+                <tr>
+                    <td> Air Pollution</td>
+                    <td>Damage trees and crops</td>
+                    <td>Reduce use of toxic waste</td>
+                </tr>
+                <tr>
+                    <td>Ocean Acidification</td>
+                    <td>Threatens marine wildlife</td>
+                    <td>Help climate change organizations</td>
+                </tr>
+            </table>
         </div>
-
-
-        <table>
-            <tr>
-                <th>Issues</th>
-                <th>Effect</th>
-                <th>Solutions</th>
-            </tr>
-            <tr>
-                <td>Chemical Pollution in Puget Sound</td>
-                <td></td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-            </tr>
-        </table>
-
 
 
 
