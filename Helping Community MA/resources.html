@@ -1,59 +1,127 @@
-<!--Arnav-->
+<!--Wyatt-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Resources</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        grid-gap: 12px;
+    }
 
+    .grid-item {
+        background-color: rgb(88, 89, 52);
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .navbar {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .title {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    .mission-statement {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    .cta-button {
+        grid-column: 3 / span 1;
+        grid-row: 3;
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(88, 89, 52);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .table-button {
+        grid-column: 3/ span 1;
+        grid-row: 4;
+        background-color: rgb(88, 89, 52);
+    }
+
+    .slideshow {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        /* Placeholder styles for the slideshow */
+    }
+
+    .image1 {
+        grid-column: 4 / span 3;
+        grid-row: 6;
+        /* Placeholder styles for the image */
+    }
+
+    .live-stats {
+        grid-column: 1 / span 3;
+        grid-row: 5;
+    }
 </style>
 
 <body>
 
-=======
+
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    </head>
 
-<body>
-    <div class="grid-container">
+    <body>
+        <div class="grid-container">
 
-        <div class="grid-item navbar">Navbar
+            <div class="grid-item navbar">Navbar
 
-            <i class="fa fa-caret-down">
-                <li><a href="index.html">Home</a></li>
-            </i>
+                <i class="fa fa-caret-down">
+                    <li><a href="index.html">Home</a></li>
+                </i>
 
-            <div class="dropdown">
-                <button class="dropbtn">Information
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <li><a href="airpollution.html">Air Pollution</a></li>
-                    <li><a href="generalproblems.html">General Problems</a></li>
-                    <li><a href="pgsissues.html">Puget Sound Issues</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Information
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <li><a href="airpollution.html">Air Pollution</a></li>
+                        <li><a href="generalproblems.html">General Problems</a></li>
+                        <li><a href="pgsissues.html">Puget Sound Issues</a></li>
+                    </div>
+                </div>
+                <div class="dropdown2">
+                    <button class="dropbtn2">Information 2
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content2">
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="Whatcanyoudo.html">What You can Do</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </div>
+                    <div class="mission-statement">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="footer">
+                    Wyatt
                 </div>
             </div>
-            <div class="dropdown2">
-                <button class="dropbtn2">Information 2
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content2">
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="Whatcanyoudo.html">What You can Do</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                </div>
-            </div>
-            <div class="footer">
-                Arnav
-            </div>
->>>>>>> 2526e17576b40d4a5ca02005101d0587f22b419a
-</body>
+    </body>
 
 </html>
