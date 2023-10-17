@@ -7,19 +7,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Puget Sound's Toxic Waters</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            .title {
+                text-align: center;
+                grid-column: 1 / span 3;
+                grid-row: 2;
+                background-color: rgb(55, 156, 55);
+            }
 
+            .mission-statement {
+                text-align: center;
+                grid-column: 1 / span 3;
+                grid-row: 3;
+                background-color: rgb(25, 100, 25);
+            }
+
+            .text {
+                text-align: left;
+                grid-column: 1 / span 3;
+                grid-row: 4 / span 5;
+                background-color: green;
+            }
+
+            .image1 {
+                text-align: center;
+                grid-column: 3;
+                grid-row: 5;
+                background-color: green;
+            }
+
+            .image2 {
+                text-align: center;
+                grid-column: 1;
+                grid-row: 7;
+                background-color: green;
+            }
+
+            .video {
+                grid-column: 2;
+                grid-row: 9;
+                background-color: green;
+            }
+
+            p {
+                text-indent: 100px;
+                color: brown;
+            }
+        </style>
     </head>
 
     <body>
         <div class="grid-container">
             <div class="grid-item navbar">
 
-                <i class="fa fa-caret-down">
-                    <li><a href="index.html">Home</a></li>
-                </i>
+                <li><a href="index.html">Home</a></li>
                 <div class="dropdown">
                     <button class="dropbtn">Problems
-                        <i class="fa fa-caret-down"></i>
+
                     </button>
                     <div class="dropdown-content">
                         <li><a href="airpollution.html">Air Pollution</a></li>
@@ -29,7 +73,7 @@
                 </div>
                 <div class="dropdown2">
                     <button class="dropbtn2">Information 2
-                        <i class="fa fa-caret-down"></i>
+
                     </button>
                     <div class="dropdown-content2">
                         <li><a href="resources.html">Resources</a></li>
@@ -38,7 +82,17 @@
                     </div>
                 </div>
             </div>
-            <div class="footer">Footer</div>
+            <div class="grid-item title">
+                <h1>Puget Sound's Toxic Waters</h1>
+            </div>
+            <div class="grid-item mission-statement">Mission Statement</div>
+            <div class="grid-item text">
+                <p>Puget Sound has</p>
+            </div>
+            <div class="grid-item image1">Image 1</div>
+            <div class="grid-item image2">Image 2</div>
+            <div class="grid-item video">Video</div>
+            <div class="footer">Page made by Guthrie Barrager</div>
         </div>
     </body>
 

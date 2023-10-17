@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dirty Air</title>
+        <title>Dirty Air in Washington</title>
         <link rel="stylesheet" href="style.css">
         <style>
             table {
@@ -17,6 +17,42 @@
             td {
                 border: 1px solid #dddddd;
             }
+
+            .title {
+                text-align: center;
+                grid-column: 1 / span 3;
+                grid-row: 2;
+            }
+
+            .mission-statement {
+                text-align: center;
+                grid-column: 1 / span 3;
+                grid-row: 3;
+            }
+
+            .text {
+                text-align: left;
+                grid-column: 1 / span 3;
+                grid-row: 4 / span 5
+            }
+
+            .image1 {
+                text-align: center;
+                grid-column: 3;
+                grid-row: 5;
+            }
+
+            .image2 {
+                text-align: center;
+                grid-column: 1;
+                grid-row: 7;
+            }
+
+            .table {
+                text-align: center;
+                grid-column: 2;
+                grid-row: 9;
+            }
         </style>
     </head>
 
@@ -24,12 +60,10 @@
         <div class="grid-container">
             <div class="grid-item navbar">
 
-                <i class="fa fa-caret-down">
-                    <li><a href="index.html">Home</a></li>
-                </i>
+                <li><a href="index.html">Home</a></li>
                 <div class="dropdown">
                     <button class="dropbtn">Problems
-                        <i class="fa fa-caret-down"></i>
+
                     </button>
                     <div class="dropdown-content">
                         <li><a href="airpollution.html">Air Pollution</a></li>
@@ -39,7 +73,7 @@
                 </div>
                 <div class="dropdown2">
                     <button class="dropbtn2">Information 2
-                        <i class="fa fa-caret-down"></i>
+
                     </button>
                     <div class="dropdown-content2">
                         <li><a href="resources.html">Resources</a></li>
@@ -48,28 +82,32 @@
                     </div>
                 </div>
             </div>
-            <div class="grid-item title">Title</div>
+            <div class="grid-item title">
+                <h1>Dirty Air in Washington</h1>
+            </div>
             <div class="grid-item mission-statement">Mission Statement</div>
-            <div class="grid-item cta-button">Button</div>
+            <div class="grid-item text">Main Text</div>
             <div class="grid-item image1">Image 1</div>
-            <div class="grid-item live-stats">Live Stats</div>
-            <table>
-                <tr>
-                    <th>Area</th>
-                    <th>AQI</th>
-                    <th>Pollution</th>
-                    <th>PM2.5</th>
-                    <th>Particles</th>
-                </tr>
-                <tr>
-                    <td>Seattle</td>
-                    <td>25-50</td>
-                    <td>Good</td>
-                    <td>7.93</td>
-                    <td>Moderate</td>
-                </tr>
-            </table>
-            <div class="footer">Footer</div>
+            <div class="grid-item image2">Image 2</div>
+            <div class="grid-item table">
+                <table>
+                    <tr>
+                        <th>Area</th>
+                        <th>AQI</th>
+                        <th>Pollution</th>
+                        <th>PM2.5</th>
+                        <th>Particles</th>
+                    </tr>
+                    <tr>
+                        <td>Seattle</td>
+                        <td>25-50</td>
+                        <td>Good</td>
+                        <td>7.93</td>
+                        <td>Moderate</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer">Page made by Guthrie Barrager</div>
         </div>
     </body>
 
