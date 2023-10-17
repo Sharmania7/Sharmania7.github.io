@@ -18,40 +18,55 @@
                 border: 1px solid #dddddd;
             }
 
+            tr:nth-child(odd) {
+                background-color: rgb(20, 55, 20);
+                color: rgb(255, 125, 55);
+            }
+
             .title {
                 text-align: center;
                 grid-column: 1 / span 3;
                 grid-row: 2;
+                background-color: rgb(20, 55, 20);
+                color: rgb(195, 95, 10);
             }
 
             .mission-statement {
                 text-align: center;
                 grid-column: 1 / span 3;
                 grid-row: 3;
+                background-color: rgb(25, 100, 25);
             }
 
             .text {
                 text-align: left;
                 grid-column: 1 / span 3;
-                grid-row: 4 / span 5
+                grid-row: 4 / span 5;
+                background-color: rgb(85, 200, 85);
             }
 
             .image1 {
                 text-align: center;
                 grid-column: 3;
                 grid-row: 5;
+                background-color: rgb(85, 200, 85);
             }
 
             .image2 {
                 text-align: center;
                 grid-column: 1;
                 grid-row: 7;
+                background-color: rgb(85, 200, 85);
             }
 
             .table {
-                text-align: center;
                 grid-column: 2;
                 grid-row: 9;
+            }
+
+            p {
+                text-indent: 100px;
+                color: brown;
             }
         </style>
     </head>
@@ -86,12 +101,14 @@
                 <h1>Dirty Air in Washington</h1>
             </div>
             <div class="grid-item mission-statement">Mission Statement</div>
-            <div class="grid-item text">Main Text</div>
+            <div class="grid-item text">
+                <p>The air in Washington has</p>
+            </div>
             <div class="grid-item image1">Image 1</div>
             <div class="grid-item image2">Image 2</div>
             <div class="grid-item table">
-                <table>
-                    <tr>
+                <table style="background-color: rgb(35, 90, 35); color: rgb(210, 115, 75);">
+                    <tr style="color: rgb(195, 90, 0);">
                         <th>Area</th>
                         <th>AQI</th>
                         <th>Pollution</th>
@@ -104,6 +121,34 @@
                         <td>Good</td>
                         <td>7.93</td>
                         <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </table>
             </div>
