@@ -1,14 +1,99 @@
 <!--Wyatt-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel = "stylesheet" href = "style.css">
-    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .title1 {
+            background-color: lightgray;
+            grid-column: 1, span 2;
+            grid-row: 2;
+        }
+
+        .background-image {
+            background-image: url(images/forest.jpg);
+        }
+
+        .one {
+            grid-row: 3;
+            grid-column: 1;
+            background-color: lightgray;
+        }
+
+        .two {
+            grid-row: 3;
+            grid-column: 2;
+            background-color: lightgray;
+        }
+
+        .three {
+            grid-row: 3;
+            grid-column: 3;
+            background-color: lightgray;
+        }
+
+        .video {
+            grid-row: 4;
+            grid-column: 1, span 2;
+            background-color: lightgray;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <div class="grid-container">
+
+        <div class="grid-item navbar">
+
+            <i class="fa fa-caret-down">
+                <li><a href="index.html">Home</a></li>
+            </i>
+
+            <div class="dropdown">
+                <button class="dropbtn">Information
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <li><a href="airpollution.html">Air Pollution</a></li>
+                    <li><a href="generalproblems.html">General Problems</a></li>
+                    <li><a href="pgsissues.html">Puget Sound Issues</a></li>
+                </div>
+            </div>
+            <div class="dropdown2">
+                <button class="dropbtn2">Information 2
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content2">
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="Whatcanyoudo.html">What You can Do</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="title1 background-image">
+            <h1>How can YOU make a change?</h1>
+            <h2>Read more to find out! </h2>
+        </div>
+        <div class="footer">
+            Arnav
+        </div>
+        <div class="one">
+            <h2>1.</h2>
+        </div>
+        <div class="two">
+            <h2>2.</h2>
+        </div>
+        <div class="three">
+            <h2>3.</h2>
+        </div>
+        <div>
+            youtube vid
+        </div>
 </body>
+
 </html>
