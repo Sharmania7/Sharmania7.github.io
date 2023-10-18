@@ -8,14 +8,17 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .title1 {
-            background-color: lightgray;
-            grid-column: 1, span 2;
-            grid-row: 2;
+        .grid-container {
+            display: grid;
+            grid-template-columns: 34% 33% 33%;
+            grid-gap: 12px;
         }
 
         .background-image {
-            background-image: url(images/forest.jpg);
+            background-image: url(images/change.jpg);
+            grid-column: 1/ span 3;
+            grid-row: 2;
+
         }
 
         .one {
@@ -45,19 +48,14 @@
 </head>
 
 <body>
-
     <div class="grid-container">
 
         <div class="grid-item navbar">
 
-            <i class="fa fa-caret-down">
-                <li><a href="index.html">Home</a></li>
-            </i>
+            <li><a href="index.html">Home</a></li>
 
             <div class="dropdown">
-                <button class="dropbtn">Information
-                    <i class="fa fa-caret-down"></i>
-                </button>
+                <button class="dropbtn">Problems</button>
                 <div class="dropdown-content">
                     <li><a href="airpollution.html">Air Pollution</a></li>
                     <li><a href="generalproblems.html">General Problems</a></li>
@@ -65,9 +63,7 @@
                 </div>
             </div>
             <div class="dropdown2">
-                <button class="dropbtn2">Information 2
-                    <i class="fa fa-caret-down"></i>
-                </button>
+                <button class="dropbtn2">Information 2</button>
                 <div class="dropdown-content2">
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="Whatcanyoudo.html">What You can Do</a></li>
@@ -75,23 +71,23 @@
                 </div>
             </div>
         </div>
-        <div class="title1 background-image">
+        <div class="grid-item background-image">
             <h1>How can YOU make a change?</h1>
             <h2>Read more to find out! </h2>
         </div>
         <div class="footer">
             Arnav
         </div>
-        <div class="one">
-            <h2>1.</h2>
+        <div class="grid-item one">
+            <h2>1. Donate</h2>
         </div>
-        <div class="two">
-            <h2>2.</h2>
+        <div class="grid-item two">
+            <h2>2. Volunteer</h2>
         </div>
-        <div class="three">
-            <h2>3.</h2>
+        <div class="grid-item three">
+            <h2>3. Fundraise</h2>
         </div>
-        <div>
+        <div class="video">
             youtube vid
         </div>
 </body>
