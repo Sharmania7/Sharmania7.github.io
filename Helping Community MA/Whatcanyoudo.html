@@ -5,59 +5,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>What can you do</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .title1 {
-            background-color: lightgray;
-            grid-column: 1, span 2;
-            grid-row: 2;
+        .grid-container {
+            display: grid;
+            grid-template-columns: 34% 33% 33%;
+            grid-gap: 12px;
         }
 
-        .background-image {
-            background-image: url(images/forest.jpg);
+        .title {
+            grid-column: 1/ span 2;
+            grid-row: 2;
+            background-color: rgb(24, 91, 33);
+            color: white;
         }
 
         .one {
             grid-row: 3;
             grid-column: 1;
-            background-color: lightgray;
+            background-color: rgb(24, 91, 33);
+            color: white;
         }
 
         .two {
             grid-row: 3;
-            grid-column: 2;
-            background-color: lightgray;
+            grid-column: 2/ span 2;
+            background-color: rgb(24, 91, 33);
+            color: white;
         }
 
         .three {
-            grid-row: 3;
-            grid-column: 3;
-            background-color: lightgray;
+            grid-row: 4;
+            grid-column: 1;
+            background-color: rgb(24, 91, 33);
+            color: white;
         }
 
         .video {
             grid-row: 4;
-            grid-column: 1, span 2;
-            background-color: lightgray;
+            grid-column: 2, span 2;
+            background-color: rgb(24, 91, 33);
+        }
+
+        .image {
+            grid-row: 2;
+            grid-column: 3;
+            background-color: rgb(24, 91, 33);
+            /*NEW FEATURE*/
+            filter: grayscale(100%);
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            width: 400px;
         }
     </style>
 </head>
 
 <body>
-
     <div class="grid-container">
 
         <div class="grid-item navbar">
 
-            <i class="fa fa-caret-down">
-                <li><a href="index.html">Home</a></li>
-            </i>
+            <li><a href="index.html">Home</a></li>
 
             <div class="dropdown">
-                <button class="dropbtn">Information
-                    <i class="fa fa-caret-down"></i>
-                </button>
+                <button class="dropbtn">Problems</button>
                 <div class="dropdown-content">
                     <li><a href="airpollution.html">Air Pollution</a></li>
                     <li><a href="generalproblems.html">General Problems</a></li>
@@ -65,9 +80,7 @@
                 </div>
             </div>
             <div class="dropdown2">
-                <button class="dropbtn2">Information 2
-                    <i class="fa fa-caret-down"></i>
-                </button>
+                <button class="dropbtn2">Solutions</button>
                 <div class="dropdown-content2">
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="Whatcanyoudo.html">What You can Do</a></li>
@@ -75,24 +88,64 @@
                 </div>
             </div>
         </div>
-        <div class="title1 background-image">
+        <div class="grid-item title">
             <h1>How can YOU make a change?</h1>
-            <h2>Read more to find out! </h2>
+            <h3>Read more to find out! </h3>
         </div>
         <div class="footer">
             Arnav
         </div>
-        <div class="one">
-            <h2>1.</h2>
+        <div class="grid-item one">
+            <h2>1. Donate</h2>
+            <p>Almost all non-profits provide an option for donating. Donating to environmentat
+                non-profits helps to support them as they work towards their mission. Non-profits may
+                allow donations in the form of money, stocks, listing it as a beneficiary, and even
+                donating used vehicles.
+            </p>
         </div>
-        <div class="two">
-            <h2>2.</h2>
+        <div class="grid-item two">
+            <h2>2. Volunteering Oppurtunities</h2>
+            <table>
+
+                <tr>
+                    <th>Organization Name</th>
+                    <th>What it does</th>
+                    <th>How you can volunteer</th>
+                </tr>
+                <tr>
+                    <th>Sierra Club</th>
+                    <td>Forest Preservation through Trail maintenance, Clean Air and Water</td>
+                    <td>Participate in trail maintenance hikes, Data Entry/Administrative help, Graphic Design, Social
+                        Media</td>
+                </tr>
+                <tr>
+                    <th>World Wildlife Fund</th>
+                    <td>Plastic cleaning, Wildlife preservation, Solving Deforestation</td>
+                    <td>Adopt a rescued animal, March/Protest</td>
+                </tr>
+                <tr>
+                    <th>Greenpiece</th>
+                    <td>Halts nuclear testing and poaching of whales</td>
+                    <td>Participating in Action Pods, Spreading Awareness, Social media</td>
+                </tr>
+
+            </table>
         </div>
-        <div class="three">
-            <h2>3.</h2>
+        <div class="grid-item three">
+            <h2>3. Fundraise</h2>
+            <p>Fundraising helps not only to raise money and materials for the cause, but organizing events like this
+                can spread awareness and create a strong community for the cause.</p>
+                <!--NEW FEATURE-->
+            <p style="opacity:calc(0.5);">How you can start a fundraiser is included in the video to the right</p>
         </div>
-        <div>
-            youtube vid
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9z3X4hZfGDs?si=jrjtNVTzEHnda_Pb"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="image">
+            <img src="images/change.jpg">
         </div>
 </body>
 

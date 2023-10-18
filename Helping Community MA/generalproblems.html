@@ -8,30 +8,103 @@
     <title>General Problems</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: grey;
-            color: white;
-            text-align: center;
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: rgb(24, 91, 33);
         }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            grid-gap: 12px;
+        }
+
+        .grid-item {
+            background-color: rgb(24, 91, 33);
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+
+
+        .title {
+            grid-column: 1 / span 3;
+            grid-row: 2;
+            text-align: center;
+            background-color: #028A0F;
+            ;
+        }
+
+        .mission-statement {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+
+        .cta-button {
+            grid-column: 3 / span 1;
+            grid-row: 3;
+            text-align: center;
+            padding: 10px;
+
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .table-button {
+            grid-column: 3/ span 1;
+            grid-row: 4;
+
+        }
+
+        .slideshow {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+            /* Placeholder styles for the slideshow */
+        }
+
+        .image1 {
+            grid-column: 4 / span 3;
+            grid-row: 6;
+            /* Placeholder styles for the image */
+        }
+
+        .live-stats {
+            grid-column: 1 / span 3;
+            grid-row: 5;
+        }
+
+        p {
+            color: white;
+        }
+
+
+
+        img {
+            border-radius: 10px;
+        }
+
+        /* Placeholder styles for the live impact statistics */
     </style>
+
+
 
 </head>
 
 <body>
     <div class="grid-container">
 
-        <div class="grid-item navbar">Navbar
-
+        <div class="grid-item navbar">
             <i class="fa fa-caret-down">
                 <li><a href="index.html">Home</a></li>
             </i>
-
             <div class="dropdown">
-                <button class="dropbtn">Information
+                <button class="dropbtn">Problems
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
@@ -50,19 +123,92 @@
                     <li><a href="contactus.html">Contact Us</a></li>
                 </div>
             </div>
+        </div>
 
-            <p></p>
-            <div class="footer">
-                <p>Wyatt</p>
+        <div class="grid-item title" style="font-size: 30px; font-family: 'Times New Roman', Times, serif;">
+            <h1 style="font-size: 40px; color: white;"> General Environmental Problems in Washington</h1>
+        </div>
+
+        <div class="grid-item mission-statement">
+            <p>
+            <p style="font-size: 20px;">Washington is a state blessed with beautiful natural spectacuals however we
+                cannot take these for
+                granted.
+                There
+                are many issues still present today, such as
+                Habitat loss, Air pollution, Climate change, and Puget Sound Issues.
+            </p>
+            <div class="image1">
+                <img src="images/background-image.jfif" alt="">
             </div>
         </div>
+
+        <div class="grid-item cta-button" style="color: white;">Side Nav
+            Sources:
+            <p>
+                <a href="https://ecology.wa.gov/Water-Shorelines/Puget-Sound/Issues-problems" target="_blank"
+                    style="color: white;">Site
+                    which gives overview of Environmental Problems</a>
+
+                <a href="https://snohomishcountywa.gov/3856/Why-Does-Puget-Sound-Need-Our-Help" target="_blank"
+                    style="color: white;">Views on Environmental
+                    Problems from
+                    Snohomish County
+                </a>
+            </p>
+        </div>
+
+        <div class="grid-item slideshow">
+            <p>Washington is a beautiful state in the United States however environmental problems are extremely present
+                in this day and age. The puget sound is a region of Washington which is heavily effected by animal and
+                human pollution.
+                For example, puget sound contains a high level of bacteria in the water, this is a risk to human safety
+                as well as animal
+                safety.
+            </p>
+
+            <div class="slideshow-container">
+
+                <div class="footer">
+                    <p style="color: white;">Wyatt Berry</p>
+                </div>
+            </div>
+        </div>
+
+        <img src="" alt="">
+
+
+
+        <div class="table-button">
+            <table style="color: white;">
+                <tr>
+                    <th>Issues</th>
+                    <th>Effect</th>
+                    <th>Solutions</th>
+                </tr>
+                <tr>
+                    <td>Climate Change</td>
+                    <td>Increasing temperature of the Earth</td>
+                    <td>Limit fossil fuel use</td>
+                </tr>
+                <tr>
+                    <td> Air Pollution</td>
+                    <td>Damage trees and crops</td>
+                    <td>Reduce use of toxic waste</td>
+                </tr>
+                <tr>
+                    <td>Ocean Acidification</td>
+                    <td>Threatens marine wildlife</td>
+                    <td>Help climate change organizations</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+
     </div>
-    <h1 style="text-align: center;">General Enviromental Problems in Washington</h1>
-    <p>Washington is a state blessed with beautiful natural spectacuals however we cannot take these for granted. There
-        are many issues still present today, such as
-        habitat loss, Air pollution, Climate change, and Puget Sound Issues.
-    </p>
-    <img src="" alt="">
 
 </body>
 
