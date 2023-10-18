@@ -10,72 +10,59 @@
 
 </head>
 <style>
-    .grid-container {
-        display: grid;
-        grid-template-columns: 40% 30% 30%;
-        grid-gap: 12px;
+    .mission-statement {
+        grid-column: 2 / span 1;
+        grid-row: 3;
+        text-align: center;
     }
 
     .grid-item {
-        background-color: rgb(88, 89, 52);
+        background-color: rgb(24, 91, 33);
         text-align: center;
         font-size: 20px;
         padding: 20px;
     }
 
-    .navbar {
-        grid-column: 1 / span 3;
-        grid-row: 1;
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px 0;
+    body {
+        background-color: rgb(144, 156, 165);
     }
 
     .title {
         grid-column: 1 / span 3;
         grid-row: 2;
         text-align: center;
-    }
-
-    .mission-statement {
-        grid-column: 1 / span 2;
-        grid-row: 3;
-    }
-
-    .cta-button {
-        grid-column: 3 / span 1;
-        grid-row: 3;
-        text-align: center;
-        padding: 10px;
-        background-color: rgb(88, 89, 52);
         color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .table-button {
-        grid-column: 3/ span 1;
-        grid-row: 4;
-        background-color: rgb(88, 89, 52);
-    }
-
-    .slideshow {
-        grid-column: 1 / span 2;
-        grid-row: 4;
-        /* Placeholder styles for the slideshow */
     }
 
     .image1 {
-        grid-column: 4 / span 3;
-        grid-row: 6;
-        /* Placeholder styles for the image */
+        grid-column: 1 / span 1;
+        grid-row: 3;
     }
 
-    .live-stats {
-        grid-column: 1 / span 3;
-        grid-row: 5;
+    .image2 {
+        grid-column: 3 / span 1;
+        grid-row: 3;
+
+    }
+
+    .resources {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+
+    }
+
+    .sources {
+        grid-column: 3 / span 1;
+        grid-row: 4;
+
+    }
+
+    p {
+        color: white;
+    }
+
+    h1.dashed {
+        border-style: dashed;
     }
 </style>
 
@@ -89,14 +76,13 @@
     <body>
         <div class="grid-container">
 
-            <div class="grid-item navbar">Navbar
+            <div class="grid-item navbar">
 
                 <i class="fa fa-caret-down">
                     <li><a href="index.html">Home</a></li>
                 </i>
-
                 <div class="dropdown">
-                    <button class="dropbtn">Information
+                    <button class="dropbtn">Problems
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -114,14 +100,59 @@
                         <li><a href="Whatcanyoudo.html">What You can Do</a></li>
                         <li><a href="contactus.html">Contact Us</a></li>
                     </div>
-                    <div class="mission-statement">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="footer">
-                    Wyatt
                 </div>
             </div>
+            <div class="grid-item title">
+                <h1 class="dashed">Resources</h1>
+
+            </div>
+            <div class=" grid-item mission-statement">
+                <p>The protection of our environment, especially the spectacular
+                    natural monuments of
+                    Washington is extremely important. Below will be some resources which will give awareness to
+                    these
+                    present problems.</p>
+            </div>
+            <div class="grid-item image1">
+                <img src="images/awareness.jpg" style="width: 450px;" alt="">
+            </div>
+            <div class="grid-item image2">
+                <img src="images/pugetsound.jfif" style="width: 300px; height: 300px;">
+            </div>
+            <div class="grid-item resources">
+                <p>Youtube Video</p>
+                <iframe width=" 560" height="315"
+                    src="https://www.youtube-nocookie.com/embed/0Puv0Pss33M?si=UNVRZ8JjJddYglvo&amp;start=140"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="grid-item sources">
+                <h2 style="color: white;">Outside Resources</h2>
+                <p>
+                    <a href="https://ecology.wa.gov/Water-Shorelines/Puget-Sound/Issues-problems" target="_blank">Source
+                        About Issues in
+                        Puget Sound</a>
+                </p>
+                <p>
+                    <a href="https://snohomishcountywa.gov/3856/Why-Does-Puget-Sound-Need-Our-Help"
+                        target="_blank">Source from
+                        Snohomish People</a>
+                </p>
+                <p>
+                    <a href="https://oceanservice.noaa.gov/ocean/earthday.html" target="_blank">What you can do to
+                        help</a>
+                </p>
+                <p>
+                    <a href="https://unity.edu/sustainability/ways-to-solve-environmental-problems/"
+                        target="_blank">What you can do
+                        pt.2</a>
+                </p>
+            </div>
+            <div class="footer">
+                Wyatt
+            </div>
+        </div>
     </body>
 
 </html>
