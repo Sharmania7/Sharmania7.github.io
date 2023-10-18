@@ -8,6 +8,7 @@
     <title>Helping the Environment</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        
         .slideshow-container {
             max-width: 1000px;
             position: relative;
@@ -15,28 +16,28 @@
         }
 
         table {
-            margin-right: 80px;
+            margin-right: 200px;
         }
 
         .title { 
             grid-column: 1 / span 2;
             grid-row: 2;
             text-align: center;
-            background-color: #028A0F;
-            color: #BF914B;
+            background-color: rgb(24, 91, 33);
+            color: white;
         }
 
         .video {
             grid-column: 3 / span 1;
             grid-row: 2;
-            background-color: #4f7942;
+            background-color: rgb(24, 91, 33);
         }
 
         .mission-statement {
             grid-column: 1 / span 2;
             grid-row: 3;
-            background-color: #B0FC38;
-            color: #954345;
+            background-color: rgb(24, 91, 33);
+            color: white;
         }
 
         .cta-button {
@@ -44,8 +45,8 @@
             grid-row: 3;
             text-align: center;
             padding: 10px;
-            background-color: #AEF358;
-            color: #704214;
+            background-color: rgb(24, 91, 33);
+            color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -54,14 +55,15 @@
         .slideshow {
             grid-column: 1 / span 3;
             grid-row: 4;
-            background-color: #03C04A;
+            background-color: rgb(24, 91, 33);
         }
 
 
         .normal-stats {
             grid-column: 1 / span 3;
             grid-row: 5;
-            background-color: #3DED97;
+            background-color: seagreen;
+            color: white;
         }
 
         /*These are all new CSS features I had to learn*/
@@ -174,32 +176,7 @@
 
 <body>
     <div class="grid-container">
-        <div class="grid-item navbar">Navbar
-
-            <i class="fa fa-caret-down">
-                <li><a href="index.html">Home</a></li>
-            </i>
-            <div class="dropdown">
-                <button class="dropbtn">Problems
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <li><a href="airpollution.html">Air Pollution</a></li>
-                    <li><a href="generalproblems.html">General Problems</a></li>
-                    <li><a href="pgsissues.html">Puget Sound Issues</a></li>
-                </div>
-            </div>
-            <div class="dropdown2">
-                <button class="dropbtn2">Information 2
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content2">
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="Whatcanyoudo.html">What You can Do</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                </div>
-            </div>
-            
+        
 
             <div class="grid-item navbar">
 
@@ -229,16 +206,19 @@
         <h1>
             Helping the Environment
         </h1>
-        <p>The creation of the environmental website was driven by a profound commitment to address the urgent ecological challenges that our planet faces today. </p>
+        <p>
+            The creation of the environmental website was driven by a profound commitment to address the urgent ecological challenges that our planet faces today. In an era marked by climate change, deforestation, biodiversity loss, and various forms of pollution, this website was conceived as a powerful tool to foster awareness, education, and activism. Its founders recognized the critical need to inform and engage individuals from all walks of life, empowering them with knowledge about environmental issues and solutions. By providing a digital platform dedicated to disseminating up-to-date information, sharing inspiring success stories, and offering practical tips for sustainable living, this website serves as a catalyst for change. It embodies the belief that collective action and informed choices, guided by science and a passion for nature, can shape a brighter, more sustainable future for our planet and generations to come. </p>
     </div>
 
        <div class="grid-item video">
         <iframe width="480" height="350" src="https://www.youtube.com/embed/gUhxcdzRgLQ?si=WROLDYl9RYcGQwk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
        </div> 
 
-    <div class="grid-item mission-statement">Statement</div>
-        <h3></h3>
-    <div class="grid-item cta-button">Download to reduce Carbon Emissions
+    <div class="grid-item mission-statement">
+        <h2>Mission Statement</h2>
+        <h3>Our mission is to inspire and empower individuals to become stewards of the environment, fostering a global community dedicated to protecting and preserving our planet for a sustainable and thriving future.</h3>
+    </div>
+        <div class="grid-item cta-button">Download to reduce Carbon Emissions
       <p>
     <a href="https://itunes.apple.com/us/app/earth-hero-end-climate-change/id1458057746?mt=8" download target="_blank">
       <button>Iphone</button>
@@ -248,44 +228,45 @@
     </a>
     </p>
     </div>
-    <div class="grid-item slideshow">Slideshow
+    <div class="grid-item slideshow">
+        <h1 style="color: white;">Slideshow</h1>
         <div class="slideshow-container">
             
             <div class="mySlides fade">
                 <div class="numbertext">1 / 6</div>
-                <img src="images/wildfires.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <img src="images/img1.jpg" style="width:100%">
+                <div class="text">Wildfire consuming a forest</div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">2 / 6</div>
-                <img src="img2.jpg" style="width:100%">
+                <img src="images/img2.jpg" style="width:100%">
                 <div class="text">Caption Two</div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">3 / 6</div>
-                <img src="img3.jpg" style="width:100%">
+                <img src="images/img3.jpg" style="width:100%">
                 <div class="text">Caption Three</div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">4 / 6</div>
-                <img src="img3.jpg" style="width:100%">
+                <img src="img4.jpg" style="width:100%">
                 <div class="text">Caption Three</div>
               </div>
 
                 <div class="mySlides fade">
-                            <div class="numbertext">5 / 6</div>
-                            <img src="img3.jpg" style="width:100%">
-                            <div class="text">Caption Three</div>
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img5.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
                 </div>
 
-                        <div class="mySlides fade">
-                            <div class="numbertext">6 / 6</div>
-                            <img src="img3.jpg" style="width:100%">
-                            <div class="text">Caption Three</div>
-                        </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img6.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
 
                         <!-- Next and previous buttons -->
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -396,98 +377,51 @@
                     <table border="1">
                         <tr>
                             <th>Year</th>
-                            <th>Average Annual Temperature (C)</th>
+                            <th>Average Annual Temperature (F°)</th>
                         </tr>
                         <tr>
                             <td>2013</td>
-                            <td></td>
+                            <td>53.3</td>
                         </tr>
                         <tr>
                             <td>2014</td>
-                            <td></td>
+                            <td>55.6</td>
                         </tr>
                         <tr>
                             <td>2015</td>
-                            <td></td>
+                            <td>56.3</td>
                         </tr>
                         <tr>
                             <td>2016</td>
-                            <td></td>
+                            <td>56.2</td>
                         </tr>
                         <tr>
                             <td>2017</td>
-                            <td></td>
+                            <td>56.1</td>
                         </tr>
                         <tr>
                             <td>2018</td>
-                            <td></td>
+                            <td>56.2</td>
                         </tr>
                         <tr>
                             <td>2019</td>
-                            <td></td>
+                            <td>53.6</td>
                         </tr>
                         <tr>
                             <td>2020</td>
-                            <td></td>
+                            <td>55.7</td>
                         </tr>
                         <tr>
                             <td>2021</td>
-                            <td></td>
+                            <td>56.3</td>
                         </tr>
                         <tr>
                             <td>2022</td>
-                            <td></td>
+                            <td>55.9</td>
                         </tr>
                     </table>
 
-                    <table border="1">
-                        <tr>
-                            <th>Year</th>
-                            <th>Renewable Energy Consumption (Gwh)</th>
-                        </tr>
-                        <tr>
-                            <td>2013</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2014</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2015</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2016</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2017</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2018</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2019</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2020</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2021</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2022</td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+                    
 
             <div class="footer">Jai</div>
 
