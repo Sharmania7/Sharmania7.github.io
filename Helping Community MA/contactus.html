@@ -8,14 +8,17 @@
     <title>contactus</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .title1 {
-            background-color: lightgray;
-            grid-column: 1, span 2;
-            grid-row: 2;
+        .grid-container {
+            display: grid;
+            grid-template-columns: 34% 33% 33%;
+            grid-gap: 12px;
         }
 
         .background-image {
             background-image: url(images/forest.jpg);
+            grid-column: 1/ span 3;
+            grid-row: 2;
+            width: 95%;
         }
 
         /* 
@@ -24,26 +27,30 @@
         also add fonts
         can we use a different column space allocating for each page
         add image icons for location, email, phone number 
-        why wont the background image extend columns
         I want to use the video class for both web pages 
     
         */
         .location {
-            grid-row: 3;
+            grid-row: 4;
             grid-column: 1;
-            background-color: lightgray;
+            background-color: white;
         }
 
         .email {
-            grid-row: 3;
+            grid-row: 4;
             grid-column: 2;
-            background-color: lightgray;
+            background-color: white;
         }
 
         .phonenumber {
-            grid-row: 3;
+            grid-row: 4;
             grid-column: 3;
-            background-color: lightgray;
+            background-color: white;
+        }
+
+        .title2 {
+            grid-row: 3;
+            grid-column: 1/ span 3;
         }
     </style>
 
@@ -54,14 +61,10 @@
 
         <div class="grid-item navbar">
 
-            <i class="fa fa-caret-down">
-                <li><a href="index.html">Home</a></li>
-            </i>
+            <li><a href="index.html">Home</a></li>
 
             <div class="dropdown">
-                <button class="dropbtn">Information
-                    <i class="fa fa-caret-down"></i>
-                </button>
+                <button class="dropbtn">Problems</button>
                 <div class="dropdown-content">
                     <li><a href="airpollution.html">Air Pollution</a></li>
                     <li><a href="generalproblems.html">General Problems</a></li>
@@ -69,9 +72,7 @@
                 </div>
             </div>
             <div class="dropdown2">
-                <button class="dropbtn2">Information 2
-                    <i class="fa fa-caret-down"></i>
-                </button>
+                <button class="dropbtn2">Information 2</button>
                 <div class="dropdown-content2">
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="Whatcanyoudo.html">What You can Do</a></li>
@@ -79,33 +80,32 @@
                 </div>
             </div>
         </div>
-        <div>
-            <div class="grid-item background-image">
-                <h1> Reach out and make a change!</h1>
-                <h2> Email, Call, or Visit!</h2>
-            </div>
-            <div class=""></div>
-            <div class=""></div>
+        <div class="grid-item title1 background-image">
+            <h1 style="background-color: rgba(255,255,255,0.6);"> Reach out and make a change!</h1>
+            <p style="color: white;">. </p>
         </div>
         <div class="footer">
             Arnav
         </div>
-        <div class="footer">
-            Arnav
-        </div>
-        <div class="location">
-            <h2>Office Location:</h2>
+        <div class="grid-item location">
+            <img src="images/location.jpg" style="width: 40%;">
+            <h2>Office Location</h2>
             <h3>Eastside Preparatory School</h3>
             <p>10613 NE 38th Place, Kirkland, WA 98033</p>
         </div>
-        <div class="email">
+        <div class="grid-item email">
+            <img src="images/email.jpg" style="width: 40%;">
             <h2>Email:</h2>
             <h3>info@eastsideprep.org</h3>
+            <p style="color: white;">. </p>
         </div>
-        <div class="phonenumber">
+        <div class="grid-item phonenumber">
+            <img src="images/phone.jpg" style="width: 40%;">
             <h2>Phone number:</h2>
             <h3>(425) 822-5668</h3>
+            <p style="color: white;">. </p>
         </div>
+    </div>
 </body>
 </body>
 
