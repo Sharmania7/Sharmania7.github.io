@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+    <style>
+        #hover {
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        #hover:hover {
+            color: blue;
+            font-size: 20px;
+        }
+
+        .highlighted-text {
+        background-color: yellow;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <h1>Javascript Demo</h1>
+    <h3>How to do onclick events and alerts on an anchor</h3>
+    <button><a href="https://www.eastsideprep.org/" target="_blank" onclick="alert('Do you go to this school?')">EPS</a></button>
+    
+    <h3>How to hide and show text?</h3>
+    <p id = "secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='Hehehehaw nothing here'; document.getElementById('secret').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <!--Add two truths and a lie-->
+
+    <h2>How to change an image</h2>
+    <img id="bulb" src="images/pic_bulboff.gif" alt="off">
+    <button onclick="document.getElementById('bulb').src = 'images/pic_bulbon.gif'">Turn on light</button>
+    <!--TODO 1-->
+    <button onclick="document.getElementById('bulb').src = 'images/pic_bulboff.gif'">Turn off light</button>
+
+    
+
+    <h3>How to change  CSS style</h3>
+    <p id="alice">I am Alice</p>
+    <button onclick="document.getElementById('alice').style.color='blue';document.getElementById('alice').style.fontSize='5px'">Small</button>
+    <!--TODO 2-->
+    <button onclick="document.getElementById('alice').style.color='red';document.getElementById('alice').style.fontSize='50px'">Large</button>
+    <button onclick="document.getElementById('alice').style.color='black';document.getElementById('alice').style.fontSize='16px'">Normal</button>
+
+    <h3>Returning user Input</h3>
+    <button onclick="askName()">What is your name?</button>
+    <p id="ask-name"></p>
+
+    <h3>Making text respond to a hover</h3>
+    <p id="hover" onclick="respondToClick(this)">This will respond when you hover</p>
+
+    <h3>Making text highlighted</h3>
+    <p id="myText">This text will be highlighted</p>
+    <button onclick="highlightText()">Highlight Text</button>
+    <button onclick="unhighlightText()">Unighlight Text</button>
+
+    <h3>Changing a whole paragraphs content</h3>
+    <p id="myParagraph">This is the original content of the paragraph.</p>
+    <button onclick="changeParagraphContent()">Change Content</button>
+    <script>
+        function askName(){
+            let nameOutput = document.getElementById('ask-name');
+            let name = prompt('What is your name?')
+            // Decide what to do
+
+            if (name === "Jai"){
+                nameOutput.innerHTML = "Good morning Neil's father";
+            } else if (name === "Neil"){
+                nameOutput.innerHTML = "I own you";
+            } 
+            else {
+                nameOutput.innerHTML = "Hello + " + name;
+            }     
+        }
+        function highlightText() {
+        var textElement = document.getElementById("myText");
+        textElement.classList.add("highlighted-text");
+        }
+        function unhighlightText() {
+            var textElement = document.getElementById("myText");
+            textElement.classList.remove("highlighted-text");
+        }
+        var textElement = document.getElementById("hover");
+
+        function changeParagraphContent() {
+
+    var paragraph = document.getElementById("myParagraph");
+
+    if (paragraph) {
+  
+        paragraph.innerHTML = "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS";
+    } else {
+        console.log("Paragraph element not found.");
+    }
+}
+    </script>
+</body>
+</html>
