@@ -28,21 +28,63 @@
             grid-column: 1 / span 3;
             grid-row: 5;
             text-align: center;
-            background-color: rgb(24, 91, 33);
             color: white;
         }
 
         .past-reviews {
             grid-column: 3 / span 1;
             grid-row: 3;
-            background-color: rgb(24, 91, 33);
+            
         }
 
         .description {
             grid-column: 1 / span 2;
             grid-row: 4;
-            background-color: rgb(24, 91, 33);
+            
             color: white;
+        }
+
+        .contact a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+
+        .grid-item .past-reviews{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFD700;
+            color: #D32F2F;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .location-column {
+            margin-bottom: 20px;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
         }
 
         .social-media {
@@ -50,7 +92,6 @@
             grid-row: 4;
             text-align: center;
             padding: 10px;
-            background-color: rgb(24, 91, 33);
             color: white;
             border: none;
             border-radius: 5px;
@@ -69,7 +110,17 @@
             background-color: #FFD700;
         }
 
+        .grid-item .locnhour {
+            display: flex;
+            flex-direction: row;
+            background-color: #FFD700;
+            color: #D32F2F;
+        }
 
+        .location-column {
+            flex: 1;
+            padding: 10px;
+        }
 
 
         /*These are all new CSS features I had to learn*/
@@ -181,15 +232,13 @@
 </head>
 
 <body style="background-color: #FFA500;"> <!-- Set background color to Burnt Orange -->
-    
+
 
     <div class="grid-container">
-        <div class="grid-item logo">
-            <img src="images/logo.jpg" alt="NNC Logo">
-        </div>
+        
         <div class="grid-item navbar" style="background-color: #FFD700;">
+            
             <li><a href="index.html">Home</a></li>
-            <li><a href="seattle.html">Seattle</a></li>
             <li><a href="issaquah.html">Issaquah</a></li>
             <li><a href="renton.html">Renton</a></li>
         </div>
@@ -199,12 +248,22 @@
             <h1>Past Reviews</h1>
             <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
             <div class="elfsight-app-08ce0959-9231-4453-92e5-4a35a8d4e455" data-elfsight-app-lazy></div>
+            <div class="contact">
+                <h3>Contact Info</h3>
+                <h5>Phone Numbers</h5>
+                <button onclick="callPhoneNumber('+4253924725')" class="phone">Call Issaquah</button>
+                <button onclick="callPhoneNumber('+4252716226')" class="phone">Call Renton</button>
+                
+                <h5>Email</h5>
+                <a href="mailto:info@naanncurry.net">Email Now</a>
+            </div>
         </div>
 
         <div class="grid-item description" style="background-color: #FFD700; color: #D32F2F;">
-            <!-- Update text color to Saffron Yellow -->
-            <h2>Description</h2>
-            <h3></h3>
+            
+            <h2>About Us</h2>
+            <p>At Naan N Curry, we proudly bring the vibrant and diverse flavors of Indian cuisine to two wonderful locations – Issaquah and Redmond. Our carefully crafted menu reflects our commitment to authenticity and culinary excellence. From the aromatic biryanis to the rich and savory curries, each dish is a celebration of the vibrant spices and traditional recipes that define Indian culinary artistry. Our cozy and welcoming atmospheres in Issaquah and Redmond provide the perfect backdrop for patrons to immerse themselves in the delightful experience of savoring authentic Indian dishes. With a focus on using premium ingredients and preserving time-honored cooking techniques, we strive to create a dining experience that transports our guests to the heart of India. Join us on a culinary journey that captures the essence of our passion for sharing the rich tapestry of Indian flavors with the communities we serve in the Pacific Northwest.
+            </p>
         </div>
 
         <div class="grid-item social-media" style="background-color: #FFD700; color: white;">Connect With Us!
@@ -223,57 +282,75 @@
         <div class="grid-item slideshow">
             <h1 style="color: white;">Slideshow</h1>
             <div class="slideshow-container">
-                
+
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 5</div>
-                    <img src="images/img1.jpg" style="width:100%">
-                    <div class="text">Wildfire consuming a forest</div>
-                  </div>
-                
-                  <div class="mySlides fade">
+                    <img src="images/img1.jpg" style="width:100%" alt="food">
+
+                </div>
+
+                <div class="mySlides fade">
                     <div class="numbertext">2 / 5</div>
-                    <img src="images/img2.jpg" style="width:100%">
-                    <div class="text">Factory emitting smoke</div>
-                  </div>
-                
-                  <div class="mySlides fade">
+                    <img src="images/img2.jpg" style="width:100%" alt="food">
+
+                </div>
+
+                <div class="mySlides fade">
                     <div class="numbertext">3 / 5</div>
-                    <img src="images/img3.jpg" style="width:100%">
+                    <img src="images/img3.jpg" style="width:100%" alt="food">
                     <div class="text">Deforestation</div>
-                  </div>
-                
-                  <div class="mySlides fade">
+                </div>
+
+                <div class="mySlides fade">
                     <div class="numbertext">4 / 5</div>
-                    <img src="images/img4.jpg" style="width:100%">
-                    <div class="text">Ice Melting has caused the water level to rise over time</div>
-                  </div>
-    
-                    <div class="mySlides fade">
-                        <div class="numbertext">5 / 5</div>
-                        <img src="images/img5.jpg" style="width:100%">
-                        <div class="text">Water Pollution</div>
-                    </div>
-    
+                    <img src="images/img4.jpg" style="width:100%" alt="food">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="images/img5.jpg" style="width:100%" alt="food">
                     
-    
-                            <!-- Next and previous buttons -->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                           
-                        </div>
-    
-                    </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
 
         <div class="grid-item locnhour" style="background-color: #FFD700; color: #D32F2F;">
             <!-- Update background color to Saffron Yellow -->
-            <h1>Location -N- Hours</h1>
-            <p>
-                <!-- Include your location and hours information here -->
-                <!-- Example: Our Address: 123 Main St, City, State
-                     Opening Hours: Monday-Friday: 9 AM - 5 PM -->
-            </p>
+            <h1>Locations -N- Hours</h1>
+
+            <div style="display: flex;" padding="10px">
+                <div class="location-column">
+                    <h2>Issaquah</h2>
+                    <p>Address: 1420 NW Gilman Blvd Issaquah, WA 98027</p>
+                    <h3>Monday: CLOSED</h3>
+                    <h3>TUES - FRI: 11AM - 9PM</h3>
+                    <h3>SAT: 11:30AM - 9PM</h3>
+                    <h3>SUN: 11:30AM - 8PM</h3>
+                </div>
+
+                <div class="location-column">
+                    <h2>Renton</h2>
+                    <p>Address: 709 S 3rd. St Renton, WA 98057</p>
+                    <h3>MONDAY: CLOSED</h3>
+                    <h3>TUES - FRI: 11AM - 9PM</h3>
+                    <h3>SAT: 11:30AM - 9PM</h3>
+                    <h3>SUN: 11:30AM - 8PM</h3>
+
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <script src="js\script.js"></script>
+
+
 </body>
 
 

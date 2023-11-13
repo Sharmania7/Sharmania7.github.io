@@ -54,6 +54,7 @@ body{
 }
 
 
+
 .navbar a {
     /* Float the links to the left */
     display: block;
@@ -79,134 +80,7 @@ body{
     /* Hover text color */
 }
 
-/* Style the navbar dropdown */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
 
-/*All new CSS features created by Jai*/
-
-/* Style the dropdown button */
-.dropdown .dropbtn {
-    font-size: 20px;
-    border: none;
-    outline: none;
-    color: #C19ACB;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin-right: 80px;
-    margin-left: 80px;
-    font-family: "capitolina", serif;
-    font-weight: 500;
-    font-style: bold;
-
-}
-
-/* Change the dropdown button color on hover */
-.dropdown:hover .dropbtn {
-    background-color: #4CAF50;
-    /* Hover background color */
-    color: #fff;
-    /* Hover text color */
-}
-
-/* Style the dropdown content */
-.dropdown-content {
-    display: none;
-    /* Hide the dropdown content by default */
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    
-
-}
-
-/* Style the dropdown links */
-.dropdown-content a {
-    float: none;
-    color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    
-}
-
-/* Change the dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-    /* Hover background color */
-}
-
-/* Show the dropdown content when hovering over the dropdown */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-.dropdown2 {
-    position: relative;
-    display: inline-block;
-}
-
-/* Style the dropdown button */
-.dropdown2 .dropbtn2 {
-    font-size: 20px;
-    border: none;
-    outline: none;
-    color: #C19ACB;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    font-family: "capitolina", serif;
-    font-weight: 500;
-    font-style: bold;    
-}
-
-/* Change the dropdown button color on hover */
-.dropdown2:hover .dropbtn2 {
-    background-color: #4CAF50;
-    /* Hover background color */
-    color: #fff;
-    /* Hover text color */
-}
-
-/* Style the dropdown content */
-.dropdown-content2 {
-    display: none;
-    /* Hide the dropdown content by default */
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-
-}
-
-/* Style the dropdown links */
-.dropdown-content2 a {
-    float: none;
-    color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* Change the dropdown links on hover */
-.dropdown-content2 a:hover {
-    background-color: #ddd;
-    /* Hover background color */
-}
-
-/* Show the dropdown content when hovering over the dropdown */
-.dropdown2:hover .dropdown-content2 {
-    display: block;
-}
 
 .footer {
     position: fixed;
