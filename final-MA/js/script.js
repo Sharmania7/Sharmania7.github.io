@@ -142,7 +142,7 @@ function checkDeliveryAddress() {
         deliveryMessage.innerText = 'Sorry, we can\'t deliver to you!';
     } else {
         deliveryMessage.innerText = '';
-        // You can proceed with other actions if needed
+       
     }
 }
 
