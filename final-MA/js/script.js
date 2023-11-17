@@ -104,6 +104,10 @@ function calculateTotalPrice() {
     document.getElementById('total').innerText = '$' + totalPrice.toFixed(2);
 }
 
+function submitOrder(){
+  alert("Thanks for submitting your order!")
+}
+
 function removeOrder(index) {
     orders.splice(index, 1);
     displayOrderSummary();
